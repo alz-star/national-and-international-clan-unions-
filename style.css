@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #e0e0e0;
+}
+
+header {
+    background: #1a1a1a;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gold;
+}
+
+header h1 {
+    margin: 0;
+    color: gold;
+    font-size: 18px;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+.container {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.sidebar {
+    width: 220px;
+    background: #181818;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    color: gold;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.settings-btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.settings-panel {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    padding: 15px;
+    display: none;
+    border-radius: 8px;
+}
