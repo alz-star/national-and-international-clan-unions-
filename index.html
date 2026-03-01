@@ -1,180 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Persatuan Marga Nasional & Internasional</title>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #e0e0e0;
-}
-header {
-    background: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid gold;
-}
-header h1 {
-    margin: 0;
-    color: gold;
-}
-nav {
-    text-align: center;
-    padding: 10px;
-    background: #181818;
-}
-nav a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0 15px;
-}
-nav a:hover {
-    color: gold;
-}
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-.card {
-    background: #1c1c1c;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #2a2a2a;
-}
-button {
-    background: gold;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-button:hover {
-    opacity: 0.8;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1a1a1a;
-    border-top: 1px solid #2a2a2a;
-}
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    background: #222;
-    border: 1px solid #333;
-    color: #fff;
-}
-</style>
+<title>Portal Persatuan Marga</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>Persatuan Marga Nasional & Internasional</h1>
-    <p>Portal resmi komunitas marga untuk persatuan dan edukasi</p>
+<h1>Persatuan Marga Nasional & Internasional</h1>
+<nav>
+<a href="index.html">Beranda</a>
+<a href="marga.html">Daftar Marga</a>
+<a href="wiki.html">Wiki</a>
+<a href="visi.html">Visi & Misi</a>
+</nav>
+<div class="settings-btn" onclick="toggleSettings()">⚙️</div>
 </header>
 
-<nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#marga">Daftar Marga</a>
-    <a href="#wiki">Wiki</a>
-    <a href="#visi">Visi & Misi</a>
-    <a href="#daftar">Daftarkan Marga</a>
-</nav>
+<div class="settings-panel" id="settingsPanel">
+<p><strong>Pengaturan</strong></p>
+<button onclick="enlargeText()">Perbesar Teks</button>
+<button onclick="normalText()">Normal</button>
+<br><br>
+<a href="https://wa.me/6285134998190" target="_blank">
+<button>Ajukan Marga Baru</button>
+</a>
+</div>
 
-<section id="beranda">
-    <div class="card">
-        <h2>Selamat Datang</h2>
-        <p>Website ini adalah portal resmi yang menghimpun berbagai komunitas marga tingkat nasional dan internasional untuk mempererat persatuan serta menyediakan informasi edukatif bagi masyarakat.</p>
-        <p><strong>Portal Referensi:</strong></p>
-        <a href="https://xzam730.github.io/PORTAL-IEA/" target="_blank">
-            <button>Kunjungi Portal Mitra</button>
-        </a>
-    </div>
-</section>
-
-<section id="marga">
-    <h2>Daftar Marga</h2>
-
-    <div class="card">
-        <h3>Marga 1</h3>
-        <p>Deskripsi singkat tentang marga ini.</p>
-        <p><strong>Owner:</strong> Admin Inti</p>
-        <a href="https://chat.whatsapp.com/CovKLoTURbp9wPoDZubnE1" target="_blank">
-            <button>Gabung Komunitas</button>
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>Marga 2</h3>
-        <p>Deskripsi singkat tentang marga ini.</p>
-        <p><strong>Owner:</strong> Admin Inti</p>
-        <a href="https://chat.whatsapp.com/HqUw3Ii9apZ3fEkuFYJQTS?mode=gi_t" target="_blank">
-            <button>Gabung Komunitas</button>
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>Marga 3</h3>
-        <p>Deskripsi singkat tentang marga ini.</p>
-        <p><strong>Owner:</strong> Admin Inti</p>
-        <a href="https://chat.whatsapp.com/KEuVlavEret6RV4EN4EMud?mode=gi_t" target="_blank">
-            <button>Gabung Komunitas</button>
-        </a>
-    </div>
-
-</section>
-
-<section id="wiki">
-    <h2>Wiki Marga</h2>
-    <div class="card">
-        <p>Halaman wiki berisi penjelasan singkat tentang masing-masing marga yang tergabung dalam portal ini. Informasi disusun secara ringkas dan netral untuk tujuan edukasi.</p>
-    </div>
-</section>
-
-<section id="visi">
-    <h2>Visi & Misi</h2>
-    <div class="card">
-        <h3>Visi</h3>
-        <p>Menjadi pusat informasi dan pemersatu komunitas marga yang terpercaya.</p>
-        <h3>Misi</h3>
-        <ul>
-            <li>Menghubungkan komunitas marga lintas wilayah</li>
-            <li>Menyediakan informasi yang terstruktur</li>
-            <li>Menjaga etika dan persatuan antar anggota</li>
-        </ul>
-    </div>
-</section>
-
-<section id="daftar">
-    <h2>Daftarkan Marga Baru</h2>
-    <div class="card">
-        <form>
-            <label>Nama Marga</label>
-            <input type="text" placeholder="Masukkan nama marga">
-            
-            <label>Nama Owner</label>
-            <input type="text" placeholder="Nama pengurus">
-            
-            <label>Link Komunitas</label>
-            <input type="text" placeholder="Link WA/IG/dll">
-            
-            <label>Deskripsi Singkat</label>
-            <textarea rows="4" placeholder="Deskripsi singkat marga"></textarea>
-            
-            <button type="submit">Kirim Pengajuan</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2026 Persatuan Marga Nasional & Internasional</p>
-</footer>
+<div class="container">
+<div class="card">
+<h2>Selamat Datang</h2>
+<p>Portal ini membantu masyarakat menemukan dan bergabung dengan marga atau komunitas sesuai minat, terutama dalam bidang edukatif.</p>
+</div>
+</div>
 
 </body>
-  </html>
+</html>
